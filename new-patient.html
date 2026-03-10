@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Patient Center – Vista Clear Eye Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { outfit: ['Outfit','sans-serif'] }, colors: { blue: { 50:'#eef2fa', 100:'#dce6f5', 200:'#b9ccea', 300:'#8ba5d4', 400:'#5877bc', 500:'#3156a3', 600:'#274690', 700:'#1e3570', 800:'#162a55', 900:'#0e1c3b' } } } } }</script>
+  <style>*, body { font-family: 'Outfit', sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- NAV -->
+  <nav class="bg-white border-b-2 border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center">
+          <img src="https://vistacleareyecare.com/storage/app/media/logo_navy-917.png" alt="Vista Clear Eye Care" class="h-12 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Home</a>
+          <a href="services.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Services</a>
+          <a href="about.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">About Us</a>
+          <a href="new-patient.html" class="font-semibold text-blue-500 text-sm">New Patients</a>
+          <a href="payment.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Insurance</a>
+          <a href="contact.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Contact</a>
+          <a href="contact.html" class="bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200 text-sm">Book Appointment</a>
+        </div>
+        <button id="menuBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden pb-4 border-t border-gray-100 mt-2 pt-4">
+        <div class="flex flex-col gap-1">
+          <a href="index.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Home</a>
+          <a href="services.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Services</a>
+          <a href="about.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">About Us</a>
+          <a href="new-patient.html" class="font-medium py-2.5 px-4 rounded-md bg-blue-50 text-blue-500">New Patients</a>
+          <a href="payment.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Insurance</a>
+          <a href="contact.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Contact</a>
+          <a href="contact.html" class="bg-blue-500 text-white font-semibold py-3 px-4 rounded-md mt-2 text-center">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="bg-emerald-500 relative overflow-hidden py-20">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full translate-x-32 -translate-y-32"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-lg -translate-x-16 translate-y-16 rotate-12"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="inline-block bg-white/15 text-white font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Welcome</div>
+      <h1 class="text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4">New Patient Center</h1>
+      <p class="text-emerald-100 text-xl max-w-2xl">Everything you need to know before your first visit. We want your first experience to be smooth and stress-free.</p>
+    </div>
+  </section>
+
+  <!-- STEPS TO GET STARTED -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Getting Started</div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight">Your First Visit in 4 Simple Steps</h2>
+      </div>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="relative">
+          <div class="bg-blue-500 rounded-lg p-8 h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full translate-x-6 -translate-y-6"></div>
+            <div class="text-white/30 font-extrabold text-6xl absolute bottom-4 right-4 leading-none">01</div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <i data-lucide="phone" class="w-6 h-6 text-white"></i>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-2">Call or Book Online</h3>
+              <p class="text-blue-100 text-sm leading-relaxed">Contact us at 215-935-6908 or use our online form to schedule your appointment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-emerald-500 rounded-lg p-8 h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full translate-x-6 -translate-y-6"></div>
+            <div class="text-white/30 font-extrabold text-6xl absolute bottom-4 right-4 leading-none">02</div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-2">Download Your Forms</h3>
+              <p class="text-emerald-100 text-sm leading-relaxed">Download, print, and complete the New Patient Health History Form before your visit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-amber-500 rounded-lg p-8 h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full translate-x-6 -translate-y-6"></div>
+            <div class="text-white/30 font-extrabold text-6xl absolute bottom-4 right-4 leading-none">03</div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
+                <i data-lucide="clock" class="w-6 h-6 text-white"></i>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-2">Arrive 15 Minutes Early</h3>
+              <p class="text-amber-100 text-sm leading-relaxed">Plan to arrive 15 minutes before your appointment time to complete any remaining paperwork.</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-gray-900 rounded-lg p-8 h-full relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-20 h-20 bg-white/5 rounded-full translate-x-6 -translate-y-6"></div>
+            <div class="text-white/10 font-extrabold text-6xl absolute bottom-4 right-4 leading-none">04</div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-4">
+                <i data-lucide="eye" class="w-6 h-6 text-white"></i>
+              </div>
+              <h3 class="text-white font-bold text-lg mb-2">Your Eye Exam</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Dr. Lee will conduct your comprehensive exam and answer all your questions about your vision and eye health.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATIENT FORMS -->
+  <section id="forms" class="bg-gray-100 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Downloadable Forms</div>
+          <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-6">Patient Forms</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4">At Vista Clear Eye Care, we value your time. To save you time in our office, you can download and complete our patient forms prior to your appointment.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">The New Patient Health History Form is required for all new patients. It collects your health history, current health status, and allows you to communicate questions, concerns, and goals regarding your eye health and vision.</p>
+
+          <div class="space-y-4 mb-8">
+            <!-- English Form -->
+            <div class="bg-white rounded-lg p-6 flex items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center shrink-0">
+                  <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                  <div class="font-bold text-gray-900">New Patient Health History Form</div>
+                  <div class="text-gray-500 text-sm">English — Required for all new patients</div>
+                </div>
+              </div>
+              <a href="https://vistacleareyecare.com/storage/app/media/WELCOME_TO_OUR_OFFICE.pdf" target="_blank" class="shrink-0 bg-blue-500 text-white font-semibold text-sm px-5 py-2.5 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                <i data-lucide="download" class="w-4 h-4"></i> Download
+              </a>
+            </div>
+            <!-- Korean Form -->
+            <div class="bg-white rounded-lg p-6 flex items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center shrink-0">
+                  <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+                </div>
+                <div>
+                  <div class="font-bold text-gray-900">환자 건강 기록 양식</div>
+                  <div class="text-gray-500 text-sm">Korean Translation — 한국어 번역본</div>
+                </div>
+              </div>
+              <a href="https://vistacleareyecare.com/storage/app/media/Korean_Translated_Patient_Form.pdf" target="_blank" class="shrink-0 bg-emerald-500 text-white font-semibold text-sm px-5 py-2.5 rounded-md hover:bg-emerald-600 hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                <i data-lucide="download" class="w-4 h-4"></i> Download
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-amber-50 border-2 border-amber-200 rounded-lg p-5 flex items-start gap-4">
+            <div class="w-10 h-10 bg-amber-500 rounded-md flex items-center justify-center shrink-0">
+              <i data-lucide="info" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <div class="font-bold text-gray-900 mb-1">Adobe Reader Required</div>
+              <p class="text-gray-600 text-sm leading-relaxed">You'll need Adobe Reader® to download and complete these forms. It's available for free at <span class="text-blue-600 font-medium">get.adobe.com/reader</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div>
+          <h3 class="font-extrabold text-gray-900 text-2xl tracking-tight mb-6">How to Submit Your Forms</h3>
+          <div class="space-y-4">
+            <div class="bg-white rounded-lg p-6 flex items-start gap-4">
+              <div class="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center shrink-0 text-white font-bold text-sm">1</div>
+              <div>
+                <div class="font-bold text-gray-900 mb-1">Download the Form</div>
+                <p class="text-gray-600 text-sm leading-relaxed">Click the download button above to get the PDF form. Open it using Adobe Reader.</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 flex items-start gap-4">
+              <div class="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center shrink-0 text-white font-bold text-sm">2</div>
+              <div>
+                <div class="font-bold text-gray-900 mb-1">Print &amp; Complete</div>
+                <p class="text-gray-600 text-sm leading-relaxed">Print the form and fill in all required information carefully and completely.</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 flex items-start gap-4">
+              <div class="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center shrink-0 text-white font-bold text-sm">3</div>
+              <div>
+                <div class="font-bold text-gray-900 mb-1">Bring to Your Appointment</div>
+                <p class="text-gray-600 text-sm leading-relaxed">Bring the completed form to your appointment, or fax it to us in advance at <strong>215-935-6387</strong>.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- What to Bring -->
+          <div class="bg-gray-900 rounded-lg p-6 mt-6">
+            <h3 class="text-white font-extrabold text-xl mb-4">What to Bring</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                Completed New Patient Health History Form
+              </li>
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                Vision insurance card and photo ID
+              </li>
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                Current eyeglasses or contact lenses
+              </li>
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                List of current medications
+              </li>
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                Previous eye exam records (if available)
+              </li>
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                Payment method (insurance co-pay, FSA card, or cash/credit)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECORDS REQUEST -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-block bg-gray-100 text-gray-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Records</div>
+          <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight mb-5">Requesting Medical Records</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">If you need your eye care records transferred from another provider, or if you need copies of your records from our office, please contact us directly at <a href="tel:2159356908" class="text-blue-500 font-semibold">215-935-6908</a> or by email at <a href="mailto:drjohnhlee@gmail.com" class="text-blue-500 font-semibold">drjohnhlee@gmail.com</a>.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-blue-50 rounded-lg p-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <i data-lucide="file-minus" class="w-6 h-6 text-white"></i>
+            </div>
+            <div class="font-bold text-gray-900 text-xl mb-1">$10</div>
+            <div class="text-gray-600 text-sm">Records under 10 pages</div>
+          </div>
+          <div class="bg-blue-50 rounded-lg p-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <i data-lucide="file-plus" class="w-6 h-6 text-white"></i>
+            </div>
+            <div class="font-bold text-gray-900 text-xl mb-1">$20</div>
+            <div class="text-gray-600 text-sm">Records 10 pages or more</div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6 col-span-2">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gray-700 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="clock" class="w-5 h-5 text-white"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 text-sm">Processing Time</div>
+                <div class="text-gray-600 text-sm">5–10 business days to process all records requests</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE CONTACT LENSES -->
+  <section class="bg-emerald-500 py-20 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full translate-x-20 -translate-y-20"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-block bg-white/15 text-white font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Convenience</div>
+          <h2 class="text-4xl font-extrabold text-white tracking-tight mb-4">Order Contact Lenses Online</h2>
+          <p class="text-emerald-100 text-lg leading-relaxed mb-6">Current patients with an active contact lens prescription can reorder their lenses online. Fast, convenient delivery straight to your door.</p>
+          <p class="text-emerald-100 text-lg leading-relaxed mb-8">Need a new prescription? Schedule a contact lens exam and we'll get you set up.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="contact.html" class="bg-white text-emerald-600 font-bold px-8 py-4 rounded-md hover:bg-emerald-50 hover:scale-105 transition-all duration-200 text-center">Schedule Lens Exam</a>
+            <a href="tel:2159356908" class="border-4 border-white text-white font-bold px-8 py-4 rounded-md hover:bg-white hover:text-emerald-600 transition-all duration-200 text-center">Call Us: 215-935-6908</a>
+          </div>
+        </div>
+        <div class="bg-white/10 rounded-lg p-8">
+          <h3 class="text-white font-extrabold text-xl mb-4">Patient Resources</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-emerald-100">
+              <div class="w-8 h-8 bg-white/20 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="shopping-cart" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-sm">Online contact lens ordering (active Rx required)</span>
+            </li>
+            <li class="flex items-center gap-3 text-emerald-100">
+              <div class="w-8 h-8 bg-white/20 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="file-text" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-sm">Patient forms available for download (English &amp; Korean)</span>
+            </li>
+            <li class="flex items-center gap-3 text-emerald-100">
+              <div class="w-8 h-8 bg-white/20 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="calendar" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-sm">Online appointment scheduling</span>
+            </li>
+            <li class="flex items-center gap-3 text-emerald-100">
+              <div class="w-8 h-8 bg-white/20 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="copy" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="text-sm">Medical records request (5–10 business days)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANCELLATION POLICY -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="bg-amber-50 border-2 border-amber-200 rounded-lg p-8 flex items-start gap-6">
+        <div class="w-14 h-14 bg-amber-500 rounded-lg flex items-center justify-center shrink-0">
+          <i data-lucide="alert-triangle" class="w-7 h-7 text-white"></i>
+        </div>
+        <div>
+          <h3 class="font-extrabold text-gray-900 text-2xl mb-3">Cancellation &amp; No-Show Policy</h3>
+          <p class="text-gray-700 text-lg leading-relaxed mb-3">We understand that schedules change. If you need to cancel or reschedule your appointment, please give us at least <strong>48 hours advance notice</strong>.</p>
+          <p class="text-gray-700 text-lg leading-relaxed">A <strong>$50 no-show fee</strong> will be charged for missed appointments without adequate prior notice. This helps us serve all our patients effectively. To cancel, please call <a href="tel:2159356908" class="text-blue-600 font-semibold">215-935-6908</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-blue-500 py-20 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full translate-x-24 -translate-y-24"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <h2 class="text-4xl font-extrabold text-white tracking-tight mb-4">Ready to Book?</h2>
+      <p class="text-blue-100 text-xl mb-8 max-w-xl mx-auto">Take the first step toward better eye health. Book your appointment online or call our office.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="bg-white text-blue-600 font-bold px-10 py-4 rounded-md hover:bg-blue-50 hover:scale-105 transition-all duration-200">Book Appointment</a>
+        <a href="tel:2159356908" class="border-4 border-white text-white font-bold px-10 py-4 rounded-md hover:bg-white hover:text-blue-600 transition-all duration-200">Call 215-935-6908</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="mb-4">
+            <img src="https://vistacleareyecare.com/storage/app/media/logo_navy-917.png" alt="Vista Clear Eye Care" class="h-10 w-auto" style="filter: brightness(0) invert(1);">
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Comprehensive eye care for families in Abington, PA and surrounding communities.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/drjohnhleeandassociates/" target="_blank" class="w-9 h-9 bg-gray-800 rounded-md flex items-center justify-center hover:bg-blue-500 transition-colors duration-200">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://twitter.com/vistaclearicare" target="_blank" class="w-9 h-9 bg-gray-800 rounded-md flex items-center justify-center hover:bg-blue-500 transition-colors duration-200">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Services</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="services.html#vision-exams" class="text-gray-400 hover:text-white transition-colors">Eye &amp; Vision Exams</a></li>
+            <li><a href="services.html#contact-lenses" class="text-gray-400 hover:text-white transition-colors">Contact Lens Exams</a></li>
+            <li><a href="services.html#lasik" class="text-gray-400 hover:text-white transition-colors">LASIK Surgery</a></li>
+            <li><a href="services.html#retinal" class="text-gray-400 hover:text-white transition-colors">Retinal Photography</a></li>
+            <li><a href="services.html#frames" class="text-gray-400 hover:text-white transition-colors">Frame Selection</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Quick Links</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="new-patient.html" class="text-gray-400 hover:text-white transition-colors">New Patient Center</a></li>
+            <li><a href="payment.html" class="text-gray-400 hover:text-white transition-colors">Insurance &amp; Payment</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Contact</div>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 mt-0.5 shrink-0"></i>
+              <span class="text-gray-400">947 Old York Rd, 1st Floor<br>Abington, PA 19001</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-blue-400 shrink-0"></i>
+              <a href="tel:2159356908" class="text-gray-400 hover:text-white transition-colors">215-935-6908</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="printer" class="w-4 h-4 text-blue-400 shrink-0"></i>
+              <span class="text-gray-400">Fax: 215-935-6387</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-600 text-sm">© 2024 Vista Clear Eye Care. All rights reserved.</p>
+        <p class="text-gray-600 text-sm">947 Old York Rd, 1st Floor, Abington, PA 19001</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

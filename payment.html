@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance & Payment – Vista Clear Eye Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { outfit: ['Outfit','sans-serif'] }, colors: { blue: { 50:'#eef2fa', 100:'#dce6f5', 200:'#b9ccea', 300:'#8ba5d4', 400:'#5877bc', 500:'#3156a3', 600:'#274690', 700:'#1e3570', 800:'#162a55', 900:'#0e1c3b' } } } } }</script>
+  <style>*, body { font-family: 'Outfit', sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- NAV -->
+  <nav class="bg-white border-b-2 border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center">
+          <img src="https://vistacleareyecare.com/storage/app/media/logo_navy-917.png" alt="Vista Clear Eye Care" class="h-12 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Home</a>
+          <a href="services.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Services</a>
+          <a href="about.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">About Us</a>
+          <a href="new-patient.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">New Patients</a>
+          <a href="payment.html" class="font-semibold text-blue-500 text-sm">Insurance</a>
+          <a href="contact.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Contact</a>
+          <a href="contact.html" class="bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200 text-sm">Book Appointment</a>
+        </div>
+        <button id="menuBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden pb-4 border-t border-gray-100 mt-2 pt-4">
+        <div class="flex flex-col gap-1">
+          <a href="index.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Home</a>
+          <a href="services.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Services</a>
+          <a href="about.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">About Us</a>
+          <a href="new-patient.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">New Patients</a>
+          <a href="payment.html" class="font-medium py-2.5 px-4 rounded-md bg-blue-50 text-blue-500">Insurance</a>
+          <a href="contact.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Contact</a>
+          <a href="contact.html" class="bg-blue-500 text-white font-semibold py-3 px-4 rounded-md mt-2 text-center">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="bg-amber-500 relative overflow-hidden py-20">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full translate-x-32 -translate-y-32"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-20 translate-y-20 rotate-12"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="inline-block bg-white/15 text-white font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Billing &amp; Coverage</div>
+      <h1 class="text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4">Insurance &amp; Payment</h1>
+      <p class="text-amber-100 text-xl max-w-2xl">We believe cost should never be a barrier to good eye health. Here's everything you need to know about your coverage and payment options.</p>
+    </div>
+  </section>
+
+  <!-- PAYMENT OPTIONS OVERVIEW -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Payment Methods</div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight">Ways to Pay</h2>
+        <p class="text-gray-500 text-lg mt-3 max-w-xl mx-auto">We accept a wide range of payment methods to make your care as accessible as possible.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="group bg-blue-50 rounded-lg p-8 text-center transition-all duration-200 hover:scale-[1.02] hover:bg-blue-100">
+          <div class="w-14 h-14 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-200 group-hover:scale-110">
+            <i data-lucide="shield-check" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2">Vision Insurance</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">We work directly with most major vision plans to submit your claims on your behalf.</p>
+        </div>
+        <div class="group bg-emerald-50 rounded-lg p-8 text-center transition-all duration-200 hover:scale-[1.02] hover:bg-emerald-100">
+          <div class="w-14 h-14 bg-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-200 group-hover:scale-110">
+            <i data-lucide="credit-card" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2">Credit Cards</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">All major credit cards accepted (Visa, Mastercard, Discover). American Express not accepted.</p>
+        </div>
+        <div class="group bg-amber-50 rounded-lg p-8 text-center transition-all duration-200 hover:scale-[1.02] hover:bg-amber-100">
+          <div class="w-14 h-14 bg-amber-500 rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-200 group-hover:scale-110">
+            <i data-lucide="wallet" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2">Cash &amp; Check</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Cash and personal checks are always welcome forms of payment at our office.</p>
+        </div>
+        <div class="group bg-violet-50 rounded-lg p-8 text-center transition-all duration-200 hover:scale-[1.02] hover:bg-violet-100">
+          <div class="w-14 h-14 bg-violet-500 rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-200 group-hover:scale-110">
+            <i data-lucide="heart-handshake" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2">FSA / HSA</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Flexible Spending and Health Savings Accounts accepted for qualifying eye care expenses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION INSURANCE DETAIL -->
+  <section class="bg-gray-100 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Vision Coverage</div>
+          <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-6">Vision Insurance</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">We work directly with vision insurers to submit claims on your behalf. Our experienced staff is trained to handle insurance coverage questions and help you maximize your benefits.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">Many current vision plans are designed to cover most basic vision-related costs, but not all costs associated with eye care. Most plans require co-payments for office visits plus additional out-of-pocket costs for frames, lenses, or specialty services.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">To verify that we accept your specific plan, please call us at <a href="tel:2159356908" class="text-blue-500 font-semibold">215-935-6908</a> before your visit. Steve Park, our Assistant Manager, specializes in insurance and billing and can answer any questions about your coverage.</p>
+
+          <div class="bg-white rounded-lg p-6">
+            <div class="font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <i data-lucide="phone" class="w-5 h-5 text-blue-500"></i>
+              Verify Your Insurance
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">Call our office to confirm your insurance is accepted and to understand what your plan covers before your appointment.</p>
+            <a href="tel:2159356908" class="inline-block bg-blue-500 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200">Call 215-935-6908</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-extrabold text-gray-900 text-2xl tracking-tight mb-6">What Vision Insurance Typically Covers</h3>
+          <div class="space-y-3">
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-emerald-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 text-sm mb-1">Annual Eye Examination</div>
+                <p class="text-gray-600 text-xs leading-relaxed">Most plans cover one comprehensive eye exam per year with a standard co-pay.</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-emerald-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 text-sm mb-1">Prescription Eyeglasses</div>
+                <p class="text-gray-600 text-xs leading-relaxed">Frame and lens allowances vary by plan. Premium lenses (progressives, anti-reflective coatings) often require an upgrade cost.</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-emerald-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 text-sm mb-1">Contact Lens Allowance</div>
+                <p class="text-gray-600 text-xs leading-relaxed">Most plans include an annual contact lens allowance that can be applied toward your lenses and fitting fee.</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-amber-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="minus" class="w-5 h-5 text-amber-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 text-sm mb-1">Medical Eye Conditions</div>
+                <p class="text-gray-600 text-xs leading-relaxed">Treatment for glaucoma, diabetic retinopathy, or other medical conditions may be billed to medical insurance rather than vision insurance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FSA / HSA -->
+  <section class="bg-blue-500 py-24 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full translate-x-20 -translate-y-20"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-16 translate-y-16"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-block bg-white/15 text-white font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Tax-Advantaged Funds</div>
+          <h2 class="text-4xl font-extrabold text-white tracking-tight mb-6">FSA &amp; HSA Accounts</h2>
+          <p class="text-blue-100 text-lg leading-relaxed mb-5">Flexible Spending Accounts (FSA) and Health Savings Accounts (HSA) allow you to set aside pre-tax dollars for medical and eye care expenses — reducing what you actually pay out of pocket.</p>
+          <p class="text-blue-100 text-lg leading-relaxed mb-8">FSA and HSA funds can be used alongside your vision insurance to cover co-pays, deductibles, frames, contact lenses, and even LASIK surgery. This is one of the smartest ways to reduce your eye care costs.</p>
+          <a href="contact.html" class="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-md hover:bg-blue-50 hover:scale-105 transition-all duration-200">Learn More at Your Visit</a>
+        </div>
+        <div class="space-y-4">
+          <div class="bg-white/10 rounded-lg p-6">
+            <h3 class="text-white font-bold text-lg mb-3">FSA Eligible Eye Care Expenses</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-3 text-blue-100 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                Comprehensive eye exams &amp; co-pays
+              </li>
+              <li class="flex items-center gap-3 text-blue-100 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                Prescription eyeglasses &amp; frames
+              </li>
+              <li class="flex items-center gap-3 text-blue-100 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                Contact lenses &amp; contact lens solutions
+              </li>
+              <li class="flex items-center gap-3 text-blue-100 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                LASIK eye surgery
+              </li>
+              <li class="flex items-center gap-3 text-blue-100 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                Prescription sunglasses
+              </li>
+              <li class="flex items-center gap-3 text-blue-100 text-sm">
+                <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                Reading glasses (if prescribed)
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white/10 rounded-lg p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
+                <i data-lucide="info" class="w-5 h-5 text-white"></i>
+              </div>
+              <div>
+                <div class="text-white font-bold mb-1">Year-End FSA Reminder</div>
+                <p class="text-blue-100 text-sm leading-relaxed">Most FSA accounts have a "use it or lose it" policy. Use remaining balances before year-end by scheduling an appointment or ordering new glasses or contacts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINANCING -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-block bg-emerald-50 text-emerald-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Flexible Options</div>
+          <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-6">Financing Options</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">We believe that cost should never stand between you and your vision health. We are happy to discuss financing options with you prior to any examination or procedure.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">Whether you're interested in LASIK, new frames, or specialty contact lenses, we'll work with you to find an arrangement that fits your budget. Contact Steve Park, our Assistant Manager, for personalized billing assistance.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="contact.html" class="inline-block bg-emerald-500 text-white font-bold px-8 py-4 rounded-md hover:bg-emerald-600 hover:scale-105 transition-all duration-200">Discuss Financing</a>
+            <a href="tel:2159356908" class="inline-block border-4 border-gray-900 text-gray-900 font-bold px-8 py-4 rounded-md hover:bg-gray-900 hover:text-white transition-all duration-200">Call Us</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-gray-100 rounded-lg p-6 col-span-2">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center shrink-0">
+                <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <div class="font-extrabold text-gray-900 text-lg mb-1">"We are able to discuss financing options with you prior to any examination."</div>
+                <div class="text-gray-600 text-sm">— Vista Clear Eye Care</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-5 text-center">
+            <div class="w-10 h-10 bg-blue-500 rounded-md flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="users" class="w-5 h-5 text-white"></i>
+            </div>
+            <div class="font-bold text-gray-900 text-sm">Steve Park</div>
+            <div class="text-gray-500 text-xs mt-1">Assistant Manager<br>Billing Specialist</div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-5 text-center">
+            <div class="w-10 h-10 bg-emerald-500 rounded-md flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+            </div>
+            <div class="font-bold text-gray-900 text-sm">Call to Discuss</div>
+            <a href="tel:2159356908" class="text-blue-500 text-xs mt-1 font-medium hover:text-blue-700 transition-colors">215-935-6908</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-gray-100 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Common Questions</div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight">Insurance FAQ</h2>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <div class="bg-white rounded-lg p-6 border-b-2 border-gray-200">
+          <h3 class="font-bold text-gray-900 text-lg mb-3">Do you accept my insurance?</h3>
+          <p class="text-gray-600 leading-relaxed">We accept most major vision insurance plans. The best way to confirm coverage is to call our office at 215-935-6908 before your appointment. Our staff will verify your benefits and let you know what to expect in terms of co-pays and coverage.</p>
+        </div>
+        <div class="bg-white rounded-lg p-6 border-b-2 border-gray-200">
+          <h3 class="font-bold text-gray-900 text-lg mb-3">Do you accept American Express?</h3>
+          <p class="text-gray-600 leading-relaxed">We accept all major credit cards with the exception of American Express. Visa, Mastercard, and Discover are all accepted.</p>
+        </div>
+        <div class="bg-white rounded-lg p-6 border-b-2 border-gray-200">
+          <h3 class="font-bold text-gray-900 text-lg mb-3">Can I use my FSA for contact lenses?</h3>
+          <p class="text-gray-600 leading-relaxed">Yes. Contact lenses, contact lens solutions, prescription eyeglasses, and eye exams are all FSA-eligible expenses. LASIK surgery is also an eligible FSA expense.</p>
+        </div>
+        <div class="bg-white rounded-lg p-6 border-b-2 border-gray-200">
+          <h3 class="font-bold text-gray-900 text-lg mb-3">What if I don't have vision insurance?</h3>
+          <p class="text-gray-600 leading-relaxed">No problem. We accept cash, checks, and major credit cards. We're also happy to discuss payment arrangements and financing options before your appointment so there are no surprises.</p>
+        </div>
+        <div class="bg-white rounded-lg p-6 border-b-2 border-gray-200">
+          <h3 class="font-bold text-gray-900 text-lg mb-3">Does vision insurance cover LASIK?</h3>
+          <p class="text-gray-600 leading-relaxed">Most standard vision insurance plans do not cover LASIK surgery, though some plans offer discounts. LASIK is, however, an FSA/HSA-eligible expense. We can discuss financing options to help make the procedure accessible.</p>
+        </div>
+        <div class="bg-white rounded-lg p-6">
+          <h3 class="font-bold text-gray-900 text-lg mb-3">How do I know what my vision plan covers?</h3>
+          <p class="text-gray-600 leading-relaxed">Call the member services number on the back of your insurance card, or bring your insurance card to your appointment and let us look up your benefits. Our team is experienced at decoding insurance plans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gray-900 py-20 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full translate-x-24 -translate-y-24"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-extrabold text-white tracking-tight mb-4">Have Billing Questions?</h2>
+          <p class="text-gray-400 text-lg leading-relaxed">Our team is here to help you understand your insurance benefits and payment options. Don't let cost concerns prevent you from getting the eye care you need.</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <a href="contact.html" class="bg-blue-500 text-white font-bold px-8 py-4 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200 text-center text-lg">Book an Appointment</a>
+          <a href="tel:2159356908" class="border-4 border-gray-600 text-white font-bold px-8 py-4 rounded-md hover:border-white transition-all duration-200 text-center text-lg">Call 215-935-6908</a>
+          <a href="mailto:drjohnhlee@gmail.com" class="bg-gray-800 text-gray-300 font-bold px-8 py-4 rounded-md hover:bg-gray-700 hover:text-white transition-all duration-200 text-center text-lg">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-16 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="mb-4">
+            <img src="https://vistacleareyecare.com/storage/app/media/logo_navy-917.png" alt="Vista Clear Eye Care" class="h-10 w-auto" style="filter: brightness(0) invert(1);">
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Comprehensive eye care for families in Abington, PA and surrounding communities.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/drjohnhleeandassociates/" target="_blank" class="w-9 h-9 bg-gray-800 rounded-md flex items-center justify-center hover:bg-blue-500 transition-colors duration-200">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://twitter.com/vistaclearicare" target="_blank" class="w-9 h-9 bg-gray-800 rounded-md flex items-center justify-center hover:bg-blue-500 transition-colors duration-200">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Services</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="services.html#vision-exams" class="text-gray-400 hover:text-white transition-colors">Eye &amp; Vision Exams</a></li>
+            <li><a href="services.html#contact-lenses" class="text-gray-400 hover:text-white transition-colors">Contact Lens Exams</a></li>
+            <li><a href="services.html#lasik" class="text-gray-400 hover:text-white transition-colors">LASIK Surgery</a></li>
+            <li><a href="services.html#retinal" class="text-gray-400 hover:text-white transition-colors">Retinal Photography</a></li>
+            <li><a href="services.html#frames" class="text-gray-400 hover:text-white transition-colors">Frame Selection</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Quick Links</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="new-patient.html" class="text-gray-400 hover:text-white transition-colors">New Patient Center</a></li>
+            <li><a href="payment.html" class="text-gray-400 hover:text-white transition-colors">Insurance &amp; Payment</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Contact</div>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 mt-0.5 shrink-0"></i>
+              <span class="text-gray-400">947 Old York Rd, 1st Floor<br>Abington, PA 19001</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-blue-400 shrink-0"></i>
+              <a href="tel:2159356908" class="text-gray-400 hover:text-white transition-colors">215-935-6908</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="mail" class="w-4 h-4 text-blue-400 shrink-0"></i>
+              <a href="mailto:drjohnhlee@gmail.com" class="text-gray-400 hover:text-white transition-colors">drjohnhlee@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-600 text-sm">© 2024 Vista Clear Eye Care. All rights reserved.</p>
+        <p class="text-gray-600 text-sm">947 Old York Rd, 1st Floor, Abington, PA 19001</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

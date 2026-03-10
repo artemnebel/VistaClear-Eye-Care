@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – Vista Clear Eye Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { outfit: ['Outfit','sans-serif'] }, colors: { blue: { 50:'#eef2fa', 100:'#dce6f5', 200:'#b9ccea', 300:'#8ba5d4', 400:'#5877bc', 500:'#3156a3', 600:'#274690', 700:'#1e3570', 800:'#162a55', 900:'#0e1c3b' } } } } }</script>
+  <style>*, body { font-family: 'Outfit', sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- NAV -->
+  <nav class="bg-white border-b-2 border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center">
+          <img src="https://vistacleareyecare.com/storage/app/media/logo_navy-917.png" alt="Vista Clear Eye Care" class="h-12 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Home</a>
+          <a href="services.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Services</a>
+          <a href="about.html" class="font-semibold text-blue-500 text-sm">About Us</a>
+          <a href="new-patient.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">New Patients</a>
+          <a href="payment.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Insurance</a>
+          <a href="contact.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Contact</a>
+          <a href="contact.html" class="bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200 text-sm">Book Appointment</a>
+        </div>
+        <button id="menuBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden pb-4 border-t border-gray-100 mt-2 pt-4">
+        <div class="flex flex-col gap-1">
+          <a href="index.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Home</a>
+          <a href="services.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Services</a>
+          <a href="about.html" class="font-medium py-2.5 px-4 rounded-md bg-blue-50 text-blue-500">About Us</a>
+          <a href="new-patient.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">New Patients</a>
+          <a href="payment.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Insurance</a>
+          <a href="contact.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Contact</a>
+          <a href="contact.html" class="bg-blue-500 text-white font-semibold py-3 px-4 rounded-md mt-2 text-center">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="bg-blue-500 relative overflow-hidden py-20">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full translate-x-32 -translate-y-32"></div>
+    <div class="absolute bottom-0 left-1/4 w-48 h-48 bg-white/5 rounded-lg rotate-12"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="inline-block bg-white/15 text-white font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Our Practice</div>
+      <h1 class="text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4">About Us</h1>
+      <p class="text-blue-100 text-xl max-w-2xl">Meet the team dedicated to providing the highest quality eye care in a comfortable, unhurried fashion.</p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Our Mission</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">Eye Care<br>You Can Trust</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">At Vista Clear Eye Care, we dedicate ourselves to providing the highest quality eye care in a comfortable, unhurried fashion. We believe that well-informed patients are active participants in their own eye health — and we take the time to make sure you always leave with answers.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">Our team is personally selected by Dr. Lee based on three criteria: professional experience, warm demeanor, and dedication to patient-centered care. Every staff member shares our commitment to treating each patient with attention and respect.</p>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-blue-50 rounded-lg p-5 text-center">
+              <div class="text-blue-500 font-extrabold text-2xl tracking-tight">3</div>
+              <div class="text-gray-600 text-xs font-semibold mt-1 uppercase tracking-wide">States Licensed</div>
+            </div>
+            <div class="bg-emerald-50 rounded-lg p-5 text-center">
+              <div class="text-emerald-500 font-extrabold text-2xl tracking-tight">All</div>
+              <div class="text-gray-600 text-xs font-semibold mt-1 uppercase tracking-wide">Ages Served</div>
+            </div>
+            <div class="bg-amber-50 rounded-lg p-5 text-center">
+              <div class="text-amber-500 font-extrabold text-2xl tracking-tight">Low</div>
+              <div class="text-gray-600 text-xs font-semibold mt-1 uppercase tracking-wide">Vision Specialty</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-lg p-8 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full translate-x-10 -translate-y-10"></div>
+          <div class="relative z-10">
+            <i data-lucide="quote" class="w-10 h-10 text-blue-500 mb-4"></i>
+            <p class="text-gray-700 text-xl leading-relaxed italic mb-6">
+              "We dedicate ourselves to providing the highest quality eye care in a comfortable, unhurried fashion. Well-informed patients are better participants in their own eye health."
+            </p>
+            <div class="font-bold text-gray-900">Dr. John H. Lee, O.D.</div>
+            <div class="text-gray-500 text-sm">Founder, Vista Clear Eye Care</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTOR -->
+  <section id="doctor" class="bg-gray-100 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Our Optometrist</div>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Meet Dr. Lee</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <!-- Doctor Card -->
+        <div class="bg-blue-500 rounded-lg p-8 relative overflow-hidden text-center">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full translate-x-10 -translate-y-10"></div>
+          <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -translate-x-8 translate-y-8"></div>
+          <div class="relative z-10">
+            <div class="w-28 h-28 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i data-lucide="user" class="w-14 h-14 text-white"></i>
+            </div>
+            <h3 class="text-white font-extrabold text-2xl tracking-tight">Dr. John H. Lee</h3>
+            <div class="text-blue-200 font-medium mt-1 mb-4">O.D. — Doctor of Optometry</div>
+            <div class="flex gap-2 justify-center">
+              <span class="bg-white/20 text-white font-semibold text-xs px-3 py-1.5 rounded-md">PA</span>
+              <span class="bg-white/20 text-white font-semibold text-xs px-3 py-1.5 rounded-md">NJ</span>
+              <span class="bg-white/20 text-white font-semibold text-xs px-3 py-1.5 rounded-md">DE</span>
+            </div>
+            <div class="mt-4 bg-white/10 rounded-lg p-3">
+              <div class="text-white text-xs font-semibold uppercase tracking-wider">Board Certified</div>
+              <div class="text-blue-200 text-xs mt-0.5">Outstanding Achievement in Primary Eye Care</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="md:col-span-2">
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">
+            Dr. John H. Lee earned his undergraduate degree from Boston University in Boston, MA, and his Doctorate of Optometry from The Pennsylvania College of Optometry. His clinical education was completed at The Eye Institute of Philadelphia — one of the nation's leading eye care institutions.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            Dr. Lee received specialty training at the William Feinbloom Low Vision Center and the Thomas P. Lynch Pediatric Clinic in Philadelphia, giving him deep expertise in caring for patients with low vision and children with complex vision needs. He is board certified in Pennsylvania, New Jersey, and Delaware, and has been recognized for outstanding achievement in primary eye care services.
+          </p>
+
+          <h3 class="font-extrabold text-gray-900 text-2xl tracking-tight mb-4">Specialties &amp; Training</h3>
+          <div class="grid sm:grid-cols-2 gap-3 mb-8">
+            <div class="bg-white rounded-lg p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="stethoscope" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <span class="font-semibold text-gray-800 text-sm">Primary Care Optometry</span>
+            </div>
+            <div class="bg-white rounded-lg p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="scan-eye" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <span class="font-semibold text-gray-800 text-sm">Ocular Disease Diagnosis &amp; Treatment</span>
+            </div>
+            <div class="bg-white rounded-lg p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="users" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <span class="font-semibold text-gray-800 text-sm">Pediatric Eye Care</span>
+            </div>
+            <div class="bg-white rounded-lg p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="accessibility" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <span class="font-semibold text-gray-800 text-sm">Low Vision Specialty</span>
+            </div>
+            <div class="bg-white rounded-lg p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="layers" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <span class="font-semibold text-gray-800 text-sm">Disease Co-Management</span>
+            </div>
+            <div class="bg-white rounded-lg p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="aperture" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <span class="font-semibold text-gray-800 text-sm">Contact Lens Services</span>
+            </div>
+          </div>
+
+          <h3 class="font-extrabold text-gray-900 text-2xl tracking-tight mb-4">Education</h3>
+          <div class="space-y-3">
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-emerald-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-emerald-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900">Boston University</div>
+                <div class="text-gray-600 text-sm">Boston, MA — Undergraduate Degree</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-emerald-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="graduation-cap" class="w-5 h-5 text-emerald-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900">Pennsylvania College of Optometry</div>
+                <div class="text-gray-600 text-sm">Doctorate of Optometry (O.D.)</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="building" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900">The Eye Institute of Philadelphia</div>
+                <div class="text-gray-600 text-sm">Clinical Education</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="building" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900">William Feinbloom Low Vision Center</div>
+                <div class="text-gray-600 text-sm">Specialty Training — Low Vision, Philadelphia</div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg p-5 flex items-start gap-4">
+              <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+                <i data-lucide="building" class="w-5 h-5 text-blue-600"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900">Thomas P. Lynch Pediatric Clinic</div>
+                <div class="text-gray-600 text-sm">Specialty Training — Pediatric Eye Care, Philadelphia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAFF -->
+  <section id="staff" class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="inline-block bg-emerald-50 text-emerald-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Our Team</div>
+        <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight">Meet the Staff</h2>
+        <p class="text-gray-500 text-lg mt-3 max-w-xl mx-auto">Every team member is personally selected by Dr. Lee for their experience, warmth, and dedication to patient care.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 rounded-lg p-8 text-center">
+          <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="user" class="w-10 h-10 text-white"></i>
+          </div>
+          <h3 class="font-extrabold text-gray-900 text-xl mb-1">Mariana Park</h3>
+          <div class="text-blue-500 font-semibold text-sm mb-3">Office Manager</div>
+          <p class="text-gray-600 text-sm leading-relaxed">Mariana handles office inquiries and concerns. She is your first point of contact and ensures every visit runs smoothly.</p>
+        </div>
+        <div class="bg-gray-100 rounded-lg p-8 text-center">
+          <div class="w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="user" class="w-10 h-10 text-white"></i>
+          </div>
+          <h3 class="font-extrabold text-gray-900 text-xl mb-1">Steve Park</h3>
+          <div class="text-emerald-600 font-semibold text-sm mb-3">Assistant Manager</div>
+          <p class="text-gray-600 text-sm leading-relaxed">Steve manages insurance and billing matters. He's available to answer any questions related to payment, coverage, and financing.</p>
+        </div>
+        <div class="bg-blue-500 rounded-lg p-8 text-center relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full translate-x-8 -translate-y-8"></div>
+          <div class="relative z-10">
+            <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i data-lucide="heart" class="w-10 h-10 text-white"></i>
+            </div>
+            <h3 class="font-extrabold text-white text-xl mb-1">Patient-First Culture</h3>
+            <div class="text-blue-200 font-semibold text-sm mb-3">Our Promise</div>
+            <p class="text-blue-100 text-sm leading-relaxed">Every member of our team is committed to making your visit comfortable, efficient, and informative. You'll never feel rushed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY PROTOCOLS -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Patient Safety</div>
+        <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Office Safety Protocols</h2>
+        <p class="text-gray-500 text-lg mt-3 max-w-xl mx-auto">We take your health seriously. Our office follows enhanced safety measures for all appointments.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-white rounded-lg p-5 flex items-start gap-3">
+          <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+            <i data-lucide="droplets" class="w-5 h-5 text-blue-600"></i>
+          </div>
+          <div>
+            <div class="font-bold text-gray-900 text-sm mb-1">Hand Sanitizer</div>
+            <p class="text-gray-600 text-xs leading-relaxed">Available throughout the office for patients and staff.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-5 flex items-start gap-3">
+          <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+            <i data-lucide="calendar" class="w-5 h-5 text-blue-600"></i>
+          </div>
+          <div>
+            <div class="font-bold text-gray-900 text-sm mb-1">By Appointment Only</div>
+            <p class="text-gray-600 text-xs leading-relaxed">All visits are scheduled in advance to limit waiting room crowding.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-5 flex items-start gap-3">
+          <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+            <i data-lucide="clock" class="w-5 h-5 text-blue-600"></i>
+          </div>
+          <div>
+            <div class="font-bold text-gray-900 text-sm mb-1">Arrive 15 Minutes Early</div>
+            <p class="text-gray-600 text-xs leading-relaxed">Please plan to arrive 15 minutes before your scheduled appointment time.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-5 flex items-start gap-3">
+          <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+            <i data-lucide="shield" class="w-5 h-5 text-blue-600"></i>
+          </div>
+          <div>
+            <div class="font-bold text-gray-900 text-sm mb-1">Staff Protective Equipment</div>
+            <p class="text-gray-600 text-xs leading-relaxed">Clinical staff wear appropriate protective equipment during all examinations.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-5 flex items-start gap-3">
+          <div class="w-10 h-10 bg-amber-100 rounded-md flex items-center justify-center shrink-0">
+            <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-600"></i>
+          </div>
+          <div>
+            <div class="font-bold text-gray-900 text-sm mb-1">Cancellation Policy</div>
+            <p class="text-gray-600 text-xs leading-relaxed">48-hour advance notice required. A $50 no-show fee applies to missed appointments without notice.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-5 flex items-start gap-3">
+          <div class="w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center shrink-0">
+            <i data-lucide="users" class="w-5 h-5 text-blue-600"></i>
+          </div>
+          <div>
+            <div class="font-bold text-gray-900 text-sm mb-1">Limited Guests</div>
+            <p class="text-gray-600 text-xs leading-relaxed">To maintain a safe environment, please limit accompanying guests unless necessary.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-emerald-500 py-20 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full translate-x-24 -translate-y-24"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Come See Us</h2>
+      <p class="text-emerald-100 text-xl mb-8 max-w-xl mx-auto">We'd love to be your family's eye care provider. Book your appointment or call us with any questions.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="bg-white text-emerald-600 font-bold px-10 py-4 rounded-md hover:bg-emerald-50 hover:scale-105 transition-all duration-200">Book Appointment</a>
+        <a href="tel:2159356908" class="border-4 border-white text-white font-bold px-10 py-4 rounded-md hover:bg-white hover:text-emerald-600 transition-all duration-200">Call 215-935-6908</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="mb-4">
+            <img src="https://vistacleareyecare.com/storage/app/media/logo_navy-917.png" alt="Vista Clear Eye Care" class="h-10 w-auto" style="filter: brightness(0) invert(1);">
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Comprehensive eye care for families in Abington, PA and surrounding communities.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/drjohnhleeandassociates/" target="_blank" class="w-9 h-9 bg-gray-800 rounded-md flex items-center justify-center hover:bg-blue-500 transition-colors duration-200">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://twitter.com/vistaclearicare" target="_blank" class="w-9 h-9 bg-gray-800 rounded-md flex items-center justify-center hover:bg-blue-500 transition-colors duration-200">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Services</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="services.html#vision-exams" class="text-gray-400 hover:text-white transition-colors">Eye &amp; Vision Exams</a></li>
+            <li><a href="services.html#contact-lenses" class="text-gray-400 hover:text-white transition-colors">Contact Lens Exams</a></li>
+            <li><a href="services.html#lasik" class="text-gray-400 hover:text-white transition-colors">LASIK Surgery</a></li>
+            <li><a href="services.html#retinal" class="text-gray-400 hover:text-white transition-colors">Retinal Photography</a></li>
+            <li><a href="services.html#computer-vision" class="text-gray-400 hover:text-white transition-colors">Computer Vision</a></li>
+            <li><a href="services.html#frames" class="text-gray-400 hover:text-white transition-colors">Frame Selection</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Quick Links</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="new-patient.html" class="text-gray-400 hover:text-white transition-colors">New Patient Center</a></li>
+            <li><a href="payment.html" class="text-gray-400 hover:text-white transition-colors">Insurance &amp; Payment</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Contact</div>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 mt-0.5 shrink-0"></i>
+              <span class="text-gray-400">947 Old York Rd, 1st Floor<br>Abington, PA 19001</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-blue-400 shrink-0"></i>
+              <a href="tel:2159356908" class="text-gray-400 hover:text-white transition-colors">215-935-6908</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="mail" class="w-4 h-4 text-blue-400 shrink-0"></i>
+              <a href="mailto:drjohnhlee@gmail.com" class="text-gray-400 hover:text-white transition-colors">drjohnhlee@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-600 text-sm">© 2024 Vista Clear Eye Care. All rights reserved.</p>
+        <p class="text-gray-600 text-sm">947 Old York Rd, 1st Floor, Abington, PA 19001</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

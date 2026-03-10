@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services – Vista Clear Eye Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { outfit: ['Outfit','sans-serif'] }, colors: { blue: { 50:'#eef2fa', 100:'#dce6f5', 200:'#b9ccea', 300:'#8ba5d4', 400:'#5877bc', 500:'#3156a3', 600:'#274690', 700:'#1e3570', 800:'#162a55', 900:'#0e1c3b' } } } } }</script>
+  <style>*, body { font-family: 'Outfit', sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- NAV -->
+  <nav class="bg-white border-b-2 border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center">
+          <img src="https://vistacleareyecare.com/storage/app/media/logo_navy-917.png" alt="Vista Clear Eye Care" class="h-12 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Home</a>
+          <a href="services.html" class="font-semibold text-blue-500 text-sm">Services</a>
+          <a href="about.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">About Us</a>
+          <a href="new-patient.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">New Patients</a>
+          <a href="payment.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Insurance</a>
+          <a href="contact.html" class="font-medium text-gray-700 hover:text-blue-500 transition-colors duration-200 text-sm">Contact</a>
+          <a href="contact.html" class="bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200 text-sm">Book Appointment</a>
+        </div>
+        <button id="menuBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden pb-4 border-t border-gray-100 mt-2 pt-4">
+        <div class="flex flex-col gap-1">
+          <a href="index.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Home</a>
+          <a href="services.html" class="font-medium py-2.5 px-4 rounded-md bg-blue-50 text-blue-500">Services</a>
+          <a href="about.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">About Us</a>
+          <a href="new-patient.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">New Patients</a>
+          <a href="payment.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Insurance</a>
+          <a href="contact.html" class="font-medium py-2.5 px-4 rounded-md hover:bg-gray-100 text-gray-700">Contact</a>
+          <a href="contact.html" class="bg-blue-500 text-white font-semibold py-3 px-4 rounded-md mt-2 text-center">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="bg-gray-900 relative overflow-hidden py-20">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full translate-x-32 -translate-y-32"></div>
+    <div class="absolute bottom-0 left-1/4 w-48 h-48 bg-blue-500/10 rounded-lg rotate-12"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="inline-block bg-blue-500/20 text-blue-400 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">What We Offer</div>
+      <h1 class="text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-4">Our Services</h1>
+      <p class="text-gray-400 text-xl max-w-2xl">Comprehensive eye care for every stage of life, from routine exams to specialty diagnostics and surgical co-management.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE NAV PILLS -->
+  <section class="bg-gray-100 py-4 sticky top-20 z-40 border-b-2 border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex gap-2 overflow-x-auto pb-1">
+        <a href="#vision-exams" class="shrink-0 bg-blue-500 text-white font-semibold text-xs px-4 py-2 rounded-md">Eye Exams</a>
+        <a href="#contact-lenses" class="shrink-0 bg-white text-gray-700 font-semibold text-xs px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Contact Lenses</a>
+        <a href="#lasik" class="shrink-0 bg-white text-gray-700 font-semibold text-xs px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">LASIK</a>
+        <a href="#retinal" class="shrink-0 bg-white text-gray-700 font-semibold text-xs px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Retinal Photography</a>
+        <a href="#glaucoma" class="shrink-0 bg-white text-gray-700 font-semibold text-xs px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Glaucoma Testing</a>
+        <a href="#computer-vision" class="shrink-0 bg-white text-gray-700 font-semibold text-xs px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Computer Vision</a>
+        <a href="#sports-vision" class="shrink-0 bg-white text-gray-700 font-semibold text-xs px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Sports Vision</a>
+        <a href="#frames" class="shrink-0 bg-white text-gray-700 font-semibold text-xs px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Frames</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 1: EYE EXAMS -->
+  <section id="vision-exams" class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Preventative Care</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">Eye &amp; Vision Exams</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">Preventative and routine eye exams are critical to maintaining good eye health. Many vision problems develop without obvious symptoms and can only be diagnosed by a licensed optometrist. Early detection enables treatment that prevents vision loss.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">The American Optometric Association recommends annual or biennial exams depending on your age and risk factors. Dr. Lee conducts a comprehensive consultation covering your symptoms, medications, work environment, health history, and family eye conditions.</p>
+          <a href="contact.html" class="inline-block bg-blue-500 text-white font-bold px-8 py-4 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200">Schedule an Exam</a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-blue-50 rounded-lg p-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <i data-lucide="file-text" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">Patient History</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Review of symptoms, medications, work environment, and family eye conditions.</p>
+          </div>
+          <div class="bg-blue-50 rounded-lg p-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <i data-lucide="eye" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">Visual Acuity</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Wall and reading chart assessments. Results expressed as fractions (20/20 standard).</p>
+          </div>
+          <div class="bg-blue-50 rounded-lg p-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <i data-lucide="activity" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">Eye Function</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Depth perception, color vision, eye muscle function, peripheral vision, and light responsiveness.</p>
+          </div>
+          <div class="bg-blue-50 rounded-lg p-6">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <i data-lucide="search" class="w-6 h-6 text-white"></i>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">Health Evaluation</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Visual inspection with magnification, pupil dilation, and tonometry to screen for glaucoma.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 2: CONTACT LENSES -->
+  <section id="contact-lenses" class="bg-gray-100 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div class="order-2 md:order-1">
+          <div class="bg-emerald-500 rounded-lg p-8 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full translate-x-10 -translate-y-10"></div>
+            <div class="relative z-10">
+              <h3 class="text-white font-extrabold text-2xl mb-6">Lens Types We Fit</h3>
+              <ul class="space-y-3">
+                <li class="flex items-center gap-3 text-emerald-100"><i data-lucide="check" class="w-5 h-5 text-white shrink-0"></i>Soft daily-wear lenses</li>
+                <li class="flex items-center gap-3 text-emerald-100"><i data-lucide="check" class="w-5 h-5 text-white shrink-0"></i>Rigid gas-permeable (RGP)</li>
+                <li class="flex items-center gap-3 text-emerald-100"><i data-lucide="check" class="w-5 h-5 text-white shrink-0"></i>Extended-wear disposable</li>
+                <li class="flex items-center gap-3 text-emerald-100"><i data-lucide="check" class="w-5 h-5 text-white shrink-0"></i>Planned replacement lenses</li>
+                <li class="flex items-center gap-3 text-emerald-100"><i data-lucide="check" class="w-5 h-5 text-white shrink-0"></i>Bifocal contact lenses</li>
+                <li class="flex items-center gap-3 text-emerald-100"><i data-lucide="check" class="w-5 h-5 text-white shrink-0"></i>Cosmetic &amp; color lenses</li>
+                <li class="flex items-center gap-3 text-emerald-100"><i data-lucide="check" class="w-5 h-5 text-white shrink-0"></i>Hard-to-fit specialty lenses</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <div class="inline-block bg-emerald-50 text-emerald-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Vision Correction</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">Contact Lens Exams</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">Dr. Lee conducts a thorough eye and vision assessment, then discusses contact lens options best suited to your vision needs and lifestyle. The practice addresses concerns like dry eye, allergies, and recurring infections when determining lens suitability.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">After determining refractive error using a phoropter or automated instrument, Dr. Lee collaborates with you to decide between contacts and glasses. Contact lenses are available in soft or rigid gas-permeable form with varying replacement schedules — daily, weekly, bi-weekly, or monthly.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">Advanced cosmetic lenses can also camouflage color variations or transform your natural eye color.</p>
+          <a href="contact.html" class="inline-block bg-emerald-500 text-white font-bold px-8 py-4 rounded-md hover:bg-emerald-600 hover:scale-105 transition-all duration-200">Book Contact Lens Exam</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 3: LASIK -->
+  <section id="lasik" class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <div class="inline-block bg-amber-50 text-amber-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Surgical Co-Management</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">LASIK Eye Surgery</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">LASIK (laser assisted in situ keratomilesis) is a corrective alternative to glasses or contact lenses. Dr. Lee provides comprehensive pre- and post-operative care and referrals to an established LASIK surgery center for advanced diagnostic testing and procedure options.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">LASIK effectively treats myopia (nearsightedness), hyperopia (farsightedness), and astigmatism. If you're deemed a candidate, you'll receive a referral to the affiliated center for the procedure itself.</p>
+          <a href="contact.html" class="inline-block bg-amber-500 text-white font-bold px-8 py-4 rounded-md hover:bg-amber-600 hover:scale-105 transition-all duration-200">LASIK Consultation</a>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+          <div class="bg-amber-50 rounded-lg p-6 flex items-start gap-4">
+            <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center shrink-0">
+              <i data-lucide="clipboard-check" class="w-6 h-6 text-white"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Pre-Surgical Evaluation</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">Comprehensive patient history review, eye health assessment, and candidacy determination. Confirms prescription stability and overall health for surgery.</p>
+            </div>
+          </div>
+          <div class="bg-amber-50 rounded-lg p-6 flex items-start gap-4">
+            <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center shrink-0">
+              <i data-lucide="zap" class="w-6 h-6 text-white"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Referral &amp; Procedure</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">Referral to affiliated LASIK center for the procedure. Advanced technology delivers fast recovery and precise results.</p>
+            </div>
+          </div>
+          <div class="bg-amber-50 rounded-lg p-6 flex items-start gap-4">
+            <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center shrink-0">
+              <i data-lucide="calendar-check" class="w-6 h-6 text-white"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Post-Operative Care</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">Follow-ups begin the day after surgery and continue at prearranged intervals over six months. Annual exams assess long-term results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 4: RETINAL PHOTOGRAPHY -->
+  <section id="retinal" class="bg-gray-100 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+          <div class="bg-violet-500 rounded-lg p-8 relative overflow-hidden aspect-square flex items-center justify-center">
+            <div class="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full translate-x-16 -translate-y-16"></div>
+            <div class="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full -translate-x-10 translate-y-10"></div>
+            <div class="text-center relative z-10">
+              <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i data-lucide="camera" class="w-16 h-16 text-white"></i>
+              </div>
+              <div class="text-white font-extrabold text-xl">Retinal Imaging</div>
+              <div class="text-violet-200 mt-1">Advanced Ocular Diagnostics</div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <div class="inline-block bg-violet-50 text-violet-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Diagnostic Imaging</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">Retinal Photography</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">Retinal photography is an excellent method for Dr. Lee to get a detailed picture of your retina — either to diagnose ocular disease or to have as a baseline reading should any abnormality arise in the future.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">This non-invasive imaging technique captures high-resolution images of the retina, optic disk, and macula, enabling accurate monitoring over time and early detection of conditions like diabetic retinopathy, macular degeneration, and glaucoma.</p>
+          <a href="contact.html" class="inline-block bg-violet-500 text-white font-bold px-8 py-4 rounded-md hover:bg-violet-600 hover:scale-105 transition-all duration-200">Schedule Imaging</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 5: GLAUCOMA -->
+  <section id="glaucoma" class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-block bg-blue-50 text-blue-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Disease Detection</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">Glaucoma Testing</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">Glaucoma is one of the leading causes of blindness, yet often has no early symptoms. Our practice uses the Humphrey Field Analyzer for visual field testing — the gold standard in detecting glaucoma suspects and monitoring patients taking vision-affecting medications.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">Tonometry during your eye exam measures intraocular pressure, a key indicator of glaucoma risk. Early detection through routine screening is the most effective way to preserve your vision.</p>
+          <a href="contact.html" class="inline-block bg-blue-500 text-white font-bold px-8 py-4 rounded-md hover:bg-blue-600 hover:scale-105 transition-all duration-200">Book a Screening</a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-blue-50 rounded-lg p-6 col-span-2">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center shrink-0">
+                <i data-lucide="gauge" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Tonometry</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Measures intraocular pressure to screen for glaucoma risk. Performed during your comprehensive eye exam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-blue-50 rounded-lg p-6 col-span-2">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center shrink-0">
+                <i data-lucide="crosshair" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Humphrey Visual Field Analysis</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Specialized testing for glaucoma suspects and patients on medications that can affect peripheral vision. Gold-standard diagnostic technology.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 6: COMPUTER VISION -->
+  <section id="computer-vision" class="bg-rose-500 py-24 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full translate-x-20 -translate-y-20"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-16 translate-y-16"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-block bg-white/15 text-white font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Digital Eye Health</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">Computer Vision Care</h2>
+          <p class="text-rose-100 text-lg leading-relaxed mb-6">Screens are everywhere — and digital eye strain is a growing concern. Computer vision syndrome affects millions who spend extended time on computers, phones, and tablets. Symptoms include headaches, blurred vision, dry eyes, and neck pain.</p>
+          <p class="text-rose-100 text-lg leading-relaxed mb-8">Dr. Lee evaluates and treats computer-related vision issues and recommends tailored solutions — from specialized lenses and screen filters to the 20-20-20 rule and ergonomic adjustments.</p>
+          <a href="contact.html" class="inline-block bg-white text-rose-600 font-bold px-8 py-4 rounded-md hover:bg-rose-50 hover:scale-105 transition-all duration-200">Get Relief Today</a>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+          <div class="bg-white/10 rounded-lg p-6">
+            <h3 class="text-white font-bold text-lg mb-2">Common Symptoms</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-3 text-rose-100 text-sm"><i data-lucide="minus" class="w-4 h-4 text-white shrink-0"></i>Eye strain and fatigue</li>
+              <li class="flex items-center gap-3 text-rose-100 text-sm"><i data-lucide="minus" class="w-4 h-4 text-white shrink-0"></i>Blurred or double vision</li>
+              <li class="flex items-center gap-3 text-rose-100 text-sm"><i data-lucide="minus" class="w-4 h-4 text-white shrink-0"></i>Headaches and neck pain</li>
+              <li class="flex items-center gap-3 text-rose-100 text-sm"><i data-lucide="minus" class="w-4 h-4 text-white shrink-0"></i>Dry, red, or irritated eyes</li>
+              <li class="flex items-center gap-3 text-rose-100 text-sm"><i data-lucide="minus" class="w-4 h-4 text-white shrink-0"></i>Difficulty focusing after screen time</li>
+            </ul>
+          </div>
+          <div class="bg-white/10 rounded-lg p-6">
+            <h3 class="text-white font-bold text-lg mb-2">The 20-20-20 Rule</h3>
+            <p class="text-rose-100 text-sm leading-relaxed">Every 20 minutes, look at something 20 feet away for at least 20 seconds. This simple habit dramatically reduces digital eye strain for screen users.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 7: SPORTS VISION -->
+  <section id="sports-vision" class="bg-gray-100 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="inline-block bg-emerald-50 text-emerald-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Athletic Performance</div>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">Sports Vision</h2>
+        <p class="text-gray-500 text-lg max-w-2xl mx-auto">Sharp vision is a competitive advantage. Sports vision care optimizes visual performance for athletes of all levels.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg p-8">
+          <div class="w-14 h-14 bg-emerald-500 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="target" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 text-xl mb-3">Visual Acuity</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Optimizing sharpness and clarity for tracking fast-moving objects on the field, court, or course.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8">
+          <div class="w-14 h-14 bg-emerald-500 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="move" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 text-xl mb-3">Eye-Hand Coordination</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Assessing and improving the reaction time between what you see and how your body responds.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8">
+          <div class="w-14 h-14 bg-emerald-500 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="shield" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 text-xl mb-3">Protective Eyewear</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Fitting sport-specific protective eyewear and prescription sports glasses for safe, optimal performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 8: FRAMES -->
+  <section id="frames" class="bg-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div>
+          <div class="inline-block bg-gray-100 text-gray-600 font-semibold text-xs px-4 py-2 rounded-md tracking-widest uppercase mb-4">Eyewear</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-6">Frame Selection</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-5">Glasses say so much about your personality and personal style. Our staff works with you to select frames matching your budget, lifestyle, and vision requirements — ensuring you leave looking and seeing your best.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">We offer prescription eyeglasses, sunglasses, and specialty frames. Our face shape guide helps narrow down the most flattering options for your features.</p>
+          <a href="contact.html" class="inline-block bg-gray-900 text-white font-bold px-8 py-4 rounded-md hover:bg-gray-700 hover:scale-105 transition-all duration-200">Visit Our Office</a>
+        </div>
+        <div>
+          <h3 class="font-extrabold text-gray-900 text-2xl tracking-tight mb-6">Frame Guide by Face Shape</h3>
+          <div class="space-y-3">
+            <div class="bg-gray-100 rounded-lg p-5 flex items-start gap-4">
+              <div class="w-8 h-8 bg-gray-900 rounded-md flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="square" class="w-4 h-4 text-white"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 mb-1">Square Face</div>
+                <p class="text-gray-600 text-sm">Strong jaw, broad forehead. Choose curved frames with more horizontal than vertical elements to soften and elongate.</p>
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-5 flex items-start gap-4">
+              <div class="w-8 h-8 bg-gray-900 rounded-md flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="circle" class="w-4 h-4 text-white"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 mb-1">Oval Face</div>
+                <p class="text-gray-600 text-sm">Balanced proportions. Wide frames that follow the brow line work best — diamond or rectangular shapes complement naturally.</p>
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-5 flex items-start gap-4">
+              <div class="w-8 h-8 bg-gray-900 rounded-md flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="circle" class="w-4 h-4 text-white"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 mb-1">Round Face</div>
+                <p class="text-gray-600 text-sm">Angular, narrow frames wider than they are deep add length and balance. Avoid round styles that exaggerate facial curves.</p>
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-5 flex items-start gap-4">
+              <div class="w-8 h-8 bg-gray-900 rounded-md flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="triangle" class="w-4 h-4 text-white"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 mb-1">Heart &amp; Triangle Face</div>
+                <p class="text-gray-600 text-sm">Frames wider at the bottom balance a broad forehead. Cat-eye, aviator, and light-colored or rimless styles work well.</p>
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-5 flex items-start gap-4">
+              <div class="w-8 h-8 bg-gray-900 rounded-md flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="diamond" class="w-4 h-4 text-white"></i>
+              </div>
+              <div>
+                <div class="font-bold text-gray-900 mb-1">Diamond Face</div>
+                <p class="text-gray-600 text-sm">Soft oval frames or rimless and cat-eye styles highlight cheekbones and complement the distinctive shape beautifully.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BOTTOM -->
+  <section class="bg-blue-500 py-20 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full translate-x-24 -translate-y-24"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Ready to Get Started?</h2>
+      <p class="text-blue-100 text-xl mb-8 max-w-xl mx-auto">Book your appointment today. New patients always welcome. Most vision insurance accepted.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="bg-white text-blue-600 font-bold px-10 py-4 rounded-md hover:bg-blue-50 hover:scale-105 transition-all duration-200">Book Appointment</a>
+        <a href="tel:2159356908" class="border-4 border-white text-white font-bold px-10 py-4 rounded-md hover:bg-white hover:text-blue-600 transition-all duration-200">Call 215-935-6908</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="mb-4">
+            <img src="https://vistacleareyecare.com/storage/app/media/logo_navy-917.png" alt="Vista Clear Eye Care" class="h-10 w-auto" style="filter: brightness(0) invert(1);">
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5">Comprehensive eye care for families in Abington, PA and surrounding communities.</p>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/drjohnhleeandassociates/" target="_blank" class="w-9 h-9 bg-gray-800 rounded-md flex items-center justify-center hover:bg-blue-500 transition-colors duration-200">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://twitter.com/vistaclearicare" target="_blank" class="w-9 h-9 bg-gray-800 rounded-md flex items-center justify-center hover:bg-blue-500 transition-colors duration-200">
+              <i data-lucide="twitter" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Services</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#vision-exams" class="text-gray-400 hover:text-white transition-colors">Eye &amp; Vision Exams</a></li>
+            <li><a href="#contact-lenses" class="text-gray-400 hover:text-white transition-colors">Contact Lens Exams</a></li>
+            <li><a href="#lasik" class="text-gray-400 hover:text-white transition-colors">LASIK Surgery</a></li>
+            <li><a href="#retinal" class="text-gray-400 hover:text-white transition-colors">Retinal Photography</a></li>
+            <li><a href="#computer-vision" class="text-gray-400 hover:text-white transition-colors">Computer Vision</a></li>
+            <li><a href="#sports-vision" class="text-gray-400 hover:text-white transition-colors">Sports Vision</a></li>
+            <li><a href="#frames" class="text-gray-400 hover:text-white transition-colors">Frame Selection</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Quick Links</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="new-patient.html" class="text-gray-400 hover:text-white transition-colors">New Patient Center</a></li>
+            <li><a href="payment.html" class="text-gray-400 hover:text-white transition-colors">Insurance &amp; Payment</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-bold text-xs tracking-widest uppercase mb-4 text-gray-400">Contact</div>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 mt-0.5 shrink-0"></i>
+              <span class="text-gray-400">947 Old York Rd, 1st Floor<br>Abington, PA 19001</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-blue-400 shrink-0"></i>
+              <a href="tel:2159356908" class="text-gray-400 hover:text-white transition-colors">215-935-6908</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="mail" class="w-4 h-4 text-blue-400 shrink-0"></i>
+              <a href="mailto:drjohnhlee@gmail.com" class="text-gray-400 hover:text-white transition-colors">drjohnhlee@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-600 text-sm">© 2024 Vista Clear Eye Care. All rights reserved.</p>
+        <p class="text-gray-600 text-sm">947 Old York Rd, 1st Floor, Abington, PA 19001</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
